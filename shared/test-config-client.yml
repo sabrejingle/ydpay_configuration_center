@@ -1,0 +1,19 @@
+server:
+  port: 9898
+
+spring:
+  application:
+    name: config-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.110.236.10:8910/eureka/
+
+
+---
+server:
+  port: 5566
+spring:
+  profiles: dev
+hello: Hello My World from port:${server.port}
