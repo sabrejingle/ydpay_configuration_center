@@ -16,4 +16,4 @@ server:
   port: 5566
 spring:
   profiles: dev
-hello: Test:cvxcvbxcvbvb----Hello My World from port:${server.port}
+hello: Test:aaaaaa----Hello My World from port:${server.port}
