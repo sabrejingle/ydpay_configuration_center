@@ -2,7 +2,7 @@
 
 
 server:
-  port: 9898
+  port: 9030
 
 spring:
   application:
@@ -11,12 +11,12 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://47.110.236.10:8910/eureka/
+      defaultZone: http://139.9.201.224:9010/eureka/
 
 
 ---
 server:
-  port: 5566
+  port: 9031
 spring:
   profiles: dev
 hello: Test:----Hello My World from port:${server.port}
