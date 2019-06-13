@@ -1,8 +1,7 @@
-#刷新地址（更改需重启后生效）
-
+eureka_uri: http://139.9.201.224/eureka
 
 server:
-  port: 9030
+  port: 15675
 
 spring:
   application:
@@ -11,12 +10,12 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://139.9.201.224:9010/eureka/
+      defaultZone: ${eureka_uri}/eureka/
 
 
 ---
 server:
-  port: 9031
+  port: 15676
 spring:
   profiles: dev
 hello: Test:----Hello My World from port:${server.port}
