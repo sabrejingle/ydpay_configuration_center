@@ -19,4 +19,4 @@ server:
   port: 15676
 spring:
   profiles: dev
-hello: Test:--------------Hello My World from port:${server.port}
+hello: Test:langligelang---Hello My World from port:${server.port}
