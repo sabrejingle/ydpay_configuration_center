@@ -1,0 +1,13 @@
+server:
+  port: 15675
+
+spring:
+  application:
+    name: config-client
+
+---
+server:
+  port: 15676
+spring:
+  profiles: dev
+hello: Test:lalala---Hello My World from port:${server.port}
